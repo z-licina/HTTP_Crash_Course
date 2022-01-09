@@ -7,8 +7,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
-    res.send('Hello from Express');
-    // Content-Type of response: text/html (default)
+    res.json({msg: "Hello"});
+    // Content-Type of response: application/json (default)
 })
 
 app.listen(5000, ()=> console.log(`Server started on 5000`));
