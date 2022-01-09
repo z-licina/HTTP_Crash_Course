@@ -1,0 +1,24 @@
+{
+  "name": "http_crash_course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zijadlicina/HTTP_Crash_Course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zijadlicina/HTTP_Crash_Course/issues"
+  },
+  "homepage": "https://github.com/zijadlicina/HTTP_Crash_Course#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
