@@ -6,13 +6,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-// ':id' like placeholder
-app.put('/post/:id', (req, res) => {
+app.delete('/post/:id', (req, res) => {
     // DATABASE STUFF
-    res.json({
-        id: req.params.id,
-        title: "My title"
-    })
+    res.json({msg: `Post ${req.params.id} deleted`})
 })
 
 app.listen(5000, ()=> console.log(`Server started on 5000`));
